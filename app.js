@@ -179,3 +179,17 @@ for(let i = argument; i >= 1; i--) {
 for(let i = argument; i >= 1; i--) {
     console.log(" ".repeat(argument - i) + "#".repeat(i));
 }
+
+// Find the Median
+const nums = [14, 11, 16, 15, 13, 16, 15, 17, 19, 11, 12, 14, 19, 11, 15, 17, 11, 18,12, 17, 12, 71, 18, 15, 12];
+let median = 0;
+
+nums.sort();
+let numLength = nums.length;
+
+if (numLength % 2 === 0) { // length of array is even
+    median = (nums[numLength / 2 - 1]+ nums[numLength / 2]) / 2;
+} else { // length of array is odd
+    median = nums[Math.floor(nums.length / 2)];
+}
+console.log("Median is: " + median);
