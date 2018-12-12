@@ -63,3 +63,19 @@ console.log(jim);
 // 6.
 jim.splice(2,1);
 let remove = console.log(jim);
+
+// Yell at the Ninja Turtles
+const ninjaArray = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+for(let i = 0; i < ninjaArray.length; i++) {
+    console.log(ninjaArray[i].toUpperCase());
+
+    // bonus:
+    let chars = ninjaArray[i].toLowerCase().split("");
+    for(let i = 0; i < chars.length; i+=2) {
+        chars[i] = chars[i].toUpperCase();
+    }
+    chars = chars.join("");
+    ninjaArray[i] = chars;
+
+    console.log(ninjaArray[i]);
+}
