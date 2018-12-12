@@ -112,6 +112,7 @@ const kristynsCloset = [
       "raybans"
     ]
   ];
+
 let kristynsShoe = kristynsCloset[0];
 kristynsCloset.splice(0,1);
 thomsCloset[2].push(kristynsShoe);
@@ -129,4 +130,15 @@ for(let i = 0; i < 3; i++) {
    
     console.log("KristynsClose item: " + kristynsCloset[randomItemOfKristyn] + " and " +
                 "ThomsCloset item: " + thomsCloset[randomCatagoryOfThomas][randomItemOfCatagoryOfThomas]);
+}
+
+
+// Dirty Laundry
+for (let i = 0; i < kristynsCloset.length ; i++) {
+    console.log("WHIRR: Now washing " + kristynsCloset[i]);
+}
+
+// Inventory
+for(let i = 0; i < thomsCloset.length; i++) {
+    console.log(thomsCloset[i]);
 }
