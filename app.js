@@ -24,3 +24,14 @@ for(let i = 0; i < 20; i++) {
         console.log(msgArray[Math.floor(Math.random() * 3)]);
     }
 }
+
+// Fizz Buzz
+function fizzBuzz(number) {
+    if(number % 5 === 0 && number % 3 === 0 ) {
+        console.log("FizzBuzz");
+    } else if(number % 5 === 0){
+        console.log("Buzz");
+    } else if (number % 3 === 0) {
+        console.log("Fizz");
+    }
+}
