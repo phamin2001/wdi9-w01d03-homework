@@ -35,3 +35,31 @@ function fizzBuzz(number) {
         console.log("Fizz");
     }
 }
+
+// Getting to Know You
+const shahzad = ["Shahzad", 1000, "Austin"];
+const jim = ["Jim", 16, "All cities"];
+const reuben = ["Reuben", 22, "Durham"];
+const daniel = ["Daniel", 186, "Dallas"];
+const ryan = ["Ryan", 65, "Denver"];
+
+// 1.
+shahzad[0] = "Gameboy";
+console.log(shahzad);
+// 2.
+daniel[1] += 1;
+console.log(daniel);
+// 3.
+ryan[2] = "Gotham City";
+console.log(ryan);
+// 4.
+reuben.pop();
+reuben.push("Chicago");
+console.log(reuben);
+// 5.
+jim.pop();
+jim.push('Madrid', 'Paris', 'San Jose');
+console.log(jim);
+// 6.
+jim.splice(2,1);
+let remove = console.log(jim);
