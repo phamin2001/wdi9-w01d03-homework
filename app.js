@@ -148,7 +148,34 @@ for(let i = 0; i < thomsCloset.length; i++) {
 let sum = 0;
 for(let i = 1; i < 1000; i++) {
     if(i % 3 === 0 || i % 5 === 0) {
-        sum = sum + i;
+        sum += i;
     }
 }
 console.log("Sum of all the multiples of 3 or 5 below 1000 is: " + sum);
+
+
+// Hungry for more?
+// 0.
+let argument = 10;
+
+// 1.
+for(let i = 1; i <= argument; i++) {
+    console.log("#".repeat(i));
+}
+
+// 2.
+for(let i = 1; i <= argument; i++) {
+    console.log(" ".repeat(argument - i) + "#".repeat(i));
+}
+
+console.log("");
+
+// 3.
+for(let i = argument; i >= 1; i--) {
+    console.log("#".repeat(i));
+}
+
+// 4.
+for(let i = argument; i >= 1; i--) {
+    console.log(" ".repeat(argument - i) + "#".repeat(i));
+}
