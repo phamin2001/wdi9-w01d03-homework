@@ -79,3 +79,54 @@ for(let i = 0; i < ninjaArray.length; i++) {
 
     console.log(ninjaArray[i]);
 }
+
+// Return of the Closets
+
+// Alien Attire
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+let kristynsShoe = kristynsCloset[0];
+kristynsCloset.splice(0,1);
+thomsCloset[2].push(kristynsShoe);
+console.log(kristynsCloset);
+console.log(thomsCloset);
+
+for(let i = 0; i < 3; i++) {
+    let lengthOfKristynCloset = kristynsCloset.length;
+    let lengthOfThomasCloset = thomsCloset.length;
+
+    let randomItemOfKristyn = Math.floor(Math.random() * lengthOfKristynCloset);
+
+    let randomCatagoryOfThomas = Math.floor(Math.random() * lengthOfThomasCloset);
+    let randomItemOfCatagoryOfThomas = Math.floor(Math.random() * thomsCloset[randomCatagoryOfThomas].length);
+   
+    console.log("KristynsClose item: " + kristynsCloset[randomItemOfKristyn] + " and " +
+                "ThomsCloset item: " + thomsCloset[randomCatagoryOfThomas][randomItemOfCatagoryOfThomas]);
+}
